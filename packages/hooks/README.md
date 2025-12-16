@@ -1,17 +1,17 @@
-# @elshaddai/hooks
+# @jrc1883/hooks
 
-Shared React hooks for ElShaddai projects - production-ready, type-safe utilities.
+Shared React hooks for modern web applications - production-ready, type-safe utilities.
 
 ## Installation
 
 ```bash
-pnpm add @elshaddai/hooks
+pnpm add @jrc1883/hooks
 
 # or
-npm install @elshaddai/hooks
+npm install @jrc1883/hooks
 
 # or
-yarn add @elshaddai/hooks
+yarn add @jrc1883/hooks
 ```
 
 ## Hooks
@@ -23,7 +23,7 @@ Debounce a value by delaying updates until after a specified delay.
 **Use Cases:** Search inputs, form validation, resize handlers
 
 ```tsx
-import { useDebounce } from '@elshaddai/hooks';
+import { useDebounce } from '@jrc1883/hooks';
 
 function SearchComponent() {
   const [search, setSearch] = useState('');
@@ -59,7 +59,7 @@ Track whether a media query matches the current viewport.
 **Use Cases:** Responsive design, dark mode detection, accessibility
 
 ```tsx
-import { useMediaQuery, useIsMobile, usePrefersDarkMode } from '@elshaddai/hooks';
+import { useMediaQuery, useIsMobile, usePrefersDarkMode } from '@jrc1883/hooks';
 
 function ResponsiveComponent() {
   const isMobile = useIsMobile();
@@ -94,7 +94,7 @@ Sync state with localStorage with automatic JSON serialization.
 **Use Cases:** Persisting user preferences, theme settings, form drafts
 
 ```tsx
-import { useLocalStorage } from '@elshaddai/hooks';
+import { useLocalStorage } from '@jrc1883/hooks';
 
 function ThemeToggle() {
   const [theme, setTheme, removeTheme] = useLocalStorage('theme', 'light');

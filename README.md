@@ -4,12 +4,12 @@ Reusable React utilities and components for modern web applications.
 
 ## 📦 Packages
 
-### [@elshaddai/hooks](./packages/hooks)
+### [@jrc1883/hooks](./packages/hooks)
 
 Production-ready React hooks for common patterns.
 
 ```bash
-npm install @elshaddai/hooks
+npm install @jrc1883/hooks
 ```
 
 **Included Hooks:**
@@ -35,10 +35,10 @@ npm install @elshaddai/hooks
 
 ```bash
 # Install
-npm install @elshaddai/hooks
+npm install @jrc1883/hooks
 
 # Use
-import { useDebounce, useIsMobile } from '@elshaddai/hooks';
+import { useDebounce, useIsMobile } from '@jrc1883/hooks';
 
 function SearchComponent() {
   const [search, setSearch] = useState('');
@@ -97,6 +97,6 @@ MIT © Josep Rodriguez
 
 ## 🔗 Links
 
-- [npm](https://www.npmjs.com/package/@elshaddai/hooks)
+- [npm](https://www.npmjs.com/package/@jrc1883/hooks)
 - [GitHub](https://github.com/jrc1883/elshaddai-packages)
 - [Issues](https://github.com/jrc1883/elshaddai-packages/issues)

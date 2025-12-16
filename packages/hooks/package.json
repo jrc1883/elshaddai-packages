@@ -1,0 +1,60 @@
+{
+  "name": "@elshaddai/hooks",
+  "version": "0.1.0",
+  "description": "Shared React hooks for ElShaddai projects",
+  "type": "module",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts --clean",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "test": "vitest",
+    "test:run": "vitest run",
+    "type-check": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "peerDependencies": {
+    "react": "^18.0.0 || ^19.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/react": "^14.1.2",
+    "@types/react": "^18.2.45",
+    "@types/react-dom": "^18.2.18",
+    "@vitest/ui": "^1.0.4",
+    "jsdom": "^24.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tsup": "^8.0.1",
+    "typescript": "^5.3.3",
+    "vitest": "^1.0.4"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "typescript",
+    "elshaddai",
+    "utility",
+    "debounce",
+    "media-query",
+    "local-storage"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/elshaddai/packages",
+    "directory": "packages/hooks"
+  },
+  "license": "MIT",
+  "author": "ElShaddai Development Team"
+}
